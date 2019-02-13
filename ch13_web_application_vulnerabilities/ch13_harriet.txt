@@ -1,0 +1,66 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Feb 13 15:17:17 2019
+
+@author: harriet
+"""
+
+#----------------------------------------------------------------------------------------------------------------------
+# CHAPTER 13 - CRITICAL WEB APPLICATION SECURITY RISKS
+#----------------------------------------------------------------------------------------------------------------------
+
+
+# OWASP TOP 10 
+#---------------------------------------------------------------------------------------
+https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf
+
+1. Injection
+
+Injection attacks, including SQL, NoSQL, OS and LDAP injection attacks, involve untrusted data being executed as part of a command or query, resulting in the execution of unintended commands. This can enable an attacker to access or alter data without authorisation.
+
+
+2. Broken authentication
+
+Flawed authentication mechanisms can be taken advantage of by an attacker, who might capture or bypass authentication methods (e.g. passwords, keys or session tokens) in order to impersonate legitmate users.
+
+
+3. Sensitive data exposure
+
+If a web application stores sensitive data that is not encrypted, or if the encryption mechanisms are weak, an attacker may steal this data.
+
+
+4. XML external entities
+
+An XML external entity attack can be carried out against a web application that parses XML inputs. This attack occurs when XML input containing a reference to an external entity is processed by a weakly configured XML parser. This attack may lead to the disclosure of confidential data, denial of service, server side request forgery, port scanning from the perspective of the machine where the parser is located, and other system impacts.
+
+
+5. Broken access control
+
+If a web application does not enforce restrictions on the privileges of authenticated users attackers can exploit these flaws to access unauthorized functionality and/or data, such as access other users' accounts, view sensitive files, modify other users’ data or change access rights.
+
+
+6. Security misconfiguration
+
+Security misconfiguration may be the result of using insecure default configurations, incomplete or ad hoc configuration, open cloud storage, misconfigured HTTP headers and/opr error messages that contain sensitive information. 
+
+
+
+7. Cross-site scripting (XSS)
+
+XSS flaws occur whenever an application includes untrusted data in a new web page without proper validation, allowing an attacker to inject malicious scripts into a benign web application. XSS attacks allow attackers to execute scripts in the victim’s browser, which can enable the attacker to hijack user sessions, deface web sites, or redirect the user to malicious sites.
+
+
+8. Insecure deserialisation
+
+Insecure deserialization often leads to remote code execution. Even if deserialization flaws do not result in remote code execution, they can be used to perform attacks, including replay attacks, injection attacks, and privilege escalation attacks. 
+
+
+9. Using components with known vulnerabilities
+
+Components, such as libraries, frameworks, and other software modules, run with the same privileges as the application. If an applicatino uses vulnerable components, these can be exploited by an attacker.
+
+
+10. Insufficient logging and monitoring
+
+Insufficient logging and monitoring allows attackers to further attack systems, maintain access to those systems, pivot to more systems, and tamper, extract, or destroy data without being noticed.
